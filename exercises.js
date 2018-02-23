@@ -17,16 +17,19 @@ console.log(testGreeting); // printing the output value of the function.
 
 // From your terminal, try running this file with node in order to see the result of `console.log(testGreeting);`
 
+
 /*Below are some specifications for Functions to be built. */
 /*
  * #1
  * Declare two variables
  *   @variable Datatype: Number `bango1`
  *   @variable Datatype: Number `bango2`
+ * 
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-
+var bango1 = 5;
+var bango2 = 10;
 
 
 /*
@@ -43,9 +46,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `sum`.
  * Console.log `sum` to test your code.
 */
-
-
-
+function add(num1,num2) {
+return num1 + num2
+}
+var sum = add(bango1,bango2);
+console.log(sum);
 /*
  * #3
  * Function - subtract
@@ -59,8 +64,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `difference`.
  * Console.log `difference` to test your code.
 */ 
-
-
+function subtract(num1,num2){
+return num1-num2;
+}
+var difference = subtract(bango1,bango2)
+console.log(difference);
 
 /*
  * #4
@@ -75,8 +83,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `product`.
  * Console.log `product` to test your code.
 */
-
-
+function multiply(num1,num2){
+    return num1*num2;
+}
+var product = multiply(bango1,bango2)
+console.log(product);
 
 /*
  * #5
@@ -91,9 +102,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `quotient`.
  * Console.log `quotient` to test your code.
 */
-
-
-
+function divide(num1,num2){
+    return num1/num2;
+}
+var quotient = divide(bango1,bango2)
+console.log(quotient);
 /*
  * #6
  * Function - checkSum
@@ -105,7 +118,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will return the string "There are `x` states in the United States." Where `x` is the value when you invoke the function. Invoke this function using the variable `sum`. 
  * Console.log your result.
 */
-
+function checkSum(x){
+    return "There are " + x + " states in the United States";
+}
+checkSum(sum);
+console.log(checkSum((sum)));
 
 
 /*
@@ -119,7 +136,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will return the string "Last night I dreamt that I ate `x` Taco Bell soft tacos."  Where `x` is the value when you invoke the function. Invoke this function using the variable `difference`.
  * Console.log your results.
 */ 
-
+function checkDifference(x){
+    return "Last night I dreamt that I ate "+ x + " Taco Bell soft tacos"
+}
+checkDifference(difference);
+console.log(checkDifference(difference));
 
 
 /*
@@ -132,9 +153,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the sum and product variables.
  * Console.log your result.  
 */
-
-
-
+function checkProduct(){
+    return sum*product
+}
+checkProduct(sum*product);
+console.log(checkProduct(sum*product));
 /*
  * #9
  * Function - checkQuotient
@@ -145,9 +168,11 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the product and quotient variables.
  * Console.log your result.  
 */
-
-
-
+function checkQuotient(){
+    return product*quotient
+}
+checkQuotient(product*quotient);
+console.log(checkQuotient(product*quotient));
 /*
  * #10
  * Function - addThenSubtract
@@ -167,9 +192,15 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-
-
-
+var bango3 = 15;
+var bango4 = 25;
+var bango5 = 35;
+function addThenSubtract(num1,num2,num3){
+var sum = add(num1,num2);
+var subtract = subtract(sum,num3);
+return subtract;
+}
+console.log(addThenSubtract);
 /*
  * #11
  * Function - multiplyThenDivide
