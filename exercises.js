@@ -197,10 +197,10 @@ var bango4 = 25;
 var bango5 = 35;
 function addThenSubtract(num1,num2,num3){
 var sum = add(num1,num2);
-var subtract = subtract(sum,num3);
-return subtract;
+console.log(sum);
+return subtract (sum , num3);
 }
-console.log(addThenSubtract);
+console.log(addThenSubtract(bango3, bango4, bango5));
 /*
  * #11
  * Function - multiplyThenDivide
@@ -214,9 +214,11 @@ console.log(addThenSubtract);
  * This function will multiply the first two parameters together. Then with the product of that operation, divide it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-
-
-
+function multiplyThenDivide(num1,num2,num3){
+    var multiplynums = multiply(num1,num2)
+    return divide (multiplynums , num3);
+    }
+    console.log(multiplyThenDivide(bango3, bango4, bango5));
 /*
  * #12
  * Function - createFullName
