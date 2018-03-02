@@ -230,7 +230,10 @@ function multiplyThenDivide(num1,num2,num3){
  *
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
-
+function createFullName(firstName,lastName){
+    return firstName + " " + lastName;
+}
+console.log(createFullName("Aaron" , "Soma"));
 
 
 /*
@@ -247,8 +250,12 @@ function multiplyThenDivide(num1,num2,num3){
  * Console.log your result.
  */
 
+function eatFood(firstName, lastName, food){
+return firstName + " " + lastName + " eats " + food + " everyday for breakfast"
+}
 
-
+var aaronsFavoriteFood = eatFood('Aaron','Soma','Cheerios');
+console.log(aaronsFavoriteFood);
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
 *  gained figure out how to build the necessary functions. Use your google-fu to 
@@ -261,8 +268,10 @@ function multiplyThenDivide(num1,num2,num3){
  * Create a function that will take in a parameter named `inches`. This function will convert inches to centimeters(cm).
  * Console.log your result. 
 */
-
-
+function shoeSize(inches){
+return inches*2.54
+}
+console.log(shoeSize(10));
 
 /*
  * #15
@@ -273,9 +282,11 @@ function multiplyThenDivide(num1,num2,num3){
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
-
-
+ function allCaps (str){
+ var res = str.toUpperCase(); 
+ console.log(res);
+}
+allCaps("believe you can and you're halfway there.");
 /*
  * #16
  * Function oneCap
@@ -283,8 +294,12 @@ function multiplyThenDivide(num1,num2,num3){
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
-
-
+function oneCap(string) 
+{
+    var string = string.charAt(0).toUpperCase() + string.slice(1);
+console.log(string);
+}
+oneCap("believe you can");
 
 /*
  * #17
@@ -296,14 +311,25 @@ function multiplyThenDivide(num1,num2,num3){
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrive`. Console.log your result.
  */
-
-
+function verifyDrivingAge(age){
+if ( age > 16){
+return true
+} else {
+return false
+}}
+var roadTrip = verifyDrivingAge(17);
 /**
  * #18
  * Function - roadTrip
  * Create a function named roadTrip. This function will check the value stored in the `roadTrip` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We goin on a Road Trip!" If false, then it will return the message "Meh, I guess I'll just stay home." Store the return value to a variable named `canDrive`. Console.log your result.
  */
-
+function roadTrip(agecheck) {
+if (checkage=== true) {
+return "chee hoo"    
+} else {
+ return"meh"
+}}
+console.log(roadTrip(roadTrip));
 
 
 
